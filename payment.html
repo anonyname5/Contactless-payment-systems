@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="payment-card">
+            <h1>Payment Details</h1>
+            <div class="amount-display">
+                <h2>Total Amount</h2>
+                <span class="total">RM 75.90</span>
+            </div>
+            <div class="payment-methods">
+                <button class="payment-option" onclick="selectPayment('credit')">
+                    <i class="fas fa-credit-card"></i>&nbsp; Credit Card
+                </button>
+                <button class="payment-option" onclick="selectPayment('debit')">
+                    <i class="fas fa-credit-card"></i>&nbsp; Debit Card
+                </button>
+                <button class="payment-option" onclick="selectPayment('wallet')">
+                    <i class="fas fa-wallet"></i>&nbsp; Digital Wallet
+                </button>
+            </div>
+            <button class="confirm-btn" onclick="confirmPayment()">Confirm Payment</button>
+        </div>
+    </div>
+
+    <!-- Add this line to check if JavaScript is loaded -->
+    <script>
+        console.log('Payment page loaded');
+    </script>
+    
+    <script src="js/payment.js"></script>
+</body>
+</html> 
